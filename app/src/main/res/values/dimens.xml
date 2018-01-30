@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="session_title_line_spacing">4sp</dimen>
+
+</resources>
