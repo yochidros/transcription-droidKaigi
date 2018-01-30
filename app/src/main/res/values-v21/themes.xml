@@ -1,9 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar">
-        <item name="colorControlNormal">@color/app_bar_text_color</item>
-        <item name="android:lineSpacingExtra">@dimen/session_title_line_spacing</item>
+    <style name="Platform.AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
-
 </resources>

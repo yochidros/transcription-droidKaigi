@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">copy-conference-app-2018</string>
+
     <!-- NavigationDrawer -->
     <string name="nav_item_home">Home</string>
     <string name="nav_item_map">Access</string>
@@ -10,4 +11,5 @@
     <string name="nav_content_description_drawer_open">Open navigation drawer</string>
     <string name="nav_content_description_drawer_close">Close navigation drawer</string>
     <string name="nav_content_description_drawer_header">DroidKaigi 2018</string>
+
 </resources>
