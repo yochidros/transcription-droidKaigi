@@ -7,4 +7,23 @@
         android:title="Session"
         />
 
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/state_search_24dp"
+        android:title="Search"
+        />
+
+    <item
+        android:id="@+id/navigation_favorite_sessions"
+        android:icon="@drawable/state_favorite_24dp"
+        android:title="My Session"
+        />
+
+    <item
+        android:id="@+id/navigation_feed"
+        android:icon="@drawable/state_feed_24dp"
+        android:title="Information"
+        />
+
+
 </menu>

@@ -1,2 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <style name="TextAppearance.App.Title" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">21sp</item>
+        <item name="android:fontFamily">@font/notosans_medium</item>
+    </style>
+
+    <style name="Platform" />
+    <style name="Platform.TextStyle" />
+    <style name="Platform.TextStyle.App" />
+    <style name="Platform.TextStyle.App.Title"/>
+
+    <style name="TextStyle.App.Title" parent="Platform.TextStyle.App.Title">
+        <item name="android:textAppearance">@style/TextAppearance.App.Title</item>
+    </style>
+</resources>

@@ -10,4 +10,10 @@
     <string name="nav_content_description_drawer_open">Open navigation drawer</string>
     <string name="nav_content_description_drawer_close">Close navigation drawer</string>
     <string name="nav_content_description_drawer_header">DroidKaigi 2018</string>
+
+
+    <string name="feed_title">Information</string>
+
+    <string name="feed_content_description_not_found">Feed does not exist image</string>
+    <string name="feed_not_found">Feed does not exist</string>
 </resources>
