@@ -2,4 +2,6 @@
 
     <dimen name="session_title_line_spacing">4sp</dimen>
 
+    <!-- Elevation -->
+    <dimen name="elevation_app_bar">4dp</dimen>
 </resources>

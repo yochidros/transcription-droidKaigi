@@ -14,6 +14,7 @@ ext {
             supportLibrary  : "27.0.2",
             archLifecycle   : "1.1.0",
             dagger          : "2.13",
+            kotpref         : "2.3.0",
     ]
 
     depends = [
@@ -49,6 +50,10 @@ ext {
             ],
             binding             : [
                     compiler: "com.android.databinding:compiler:3.0.1"
+            ],
+            kotpref                : [
+                    kotpref    : "com.chibatching.kotpref:kotpref:$versions.kotpref",
+                    initializer: "com.chibatching.kotpref:initializer:$versions.kotpref",
             ],
 
             //==================== Test ====================

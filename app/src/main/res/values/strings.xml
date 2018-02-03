@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">copy-conference-app-2018</string>
+
+    <!-- Preference Keys -->
+    <string name="pref_key_enable_local_time" translatable="false">pref_key_enable_local_time</string>
+    <string name="pref_key_enable_notification" translatable="true">pref_key_enable_notification</string>
+    <string name="pref_key_enable_hide_bottom_navigation" translatable="false">pref_key_enable_hide_bottom_navigation</string>
+
     <!-- NavigationDrawer -->
     <string name="nav_item_home">Home</string>
     <string name="nav_item_map">Access</string>

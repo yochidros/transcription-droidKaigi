@@ -65,6 +65,8 @@ dependencies {
 
     kapt depends.binding.compiler
 
+    implementation depends.kotpref.kotpref
+    implementation depends.kotpref.initializer
 
 //    Test
     androidTestImplementation  depends.supporttest.runner

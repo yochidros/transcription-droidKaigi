@@ -22,13 +22,13 @@
                 android:theme="@style/AppTheme.AppBarOverlay"
                 />
 
-            <android.support.constraint.ConstraintLayout style="@style/ContentFrameLayout">
+            <android.support.design.widget.CoordinatorLayout style="@style/ContentFrameLayout">
 
                 <FrameLayout
                     android:id="@+id/content"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:layout_behavior="io.github.droidkaigi.confsched2018.presentation.common.view.ContentWithBottomNavigationBehavior"
+                    app:layout_behavior="com.example.yochio.copy_conference_app_2018.presentation.common.view.ContentWithBottomNavigationBehavior"
                     />
 
                 <android.support.design.widget.BottomNavigationView
@@ -42,7 +42,7 @@
                     app:menu="@menu/bottom_navigation"
                     />
 
-            </android.support.constraint.ConstraintLayout>
+            </android.support.design.widget.CoordinatorLayout>
 
         </android.support.constraint.ConstraintLayout>
 
