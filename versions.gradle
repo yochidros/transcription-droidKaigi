@@ -10,6 +10,7 @@ ext {
             ktlint          : "0.14.0",
             ktlintGradle    : "3.0.0",
             fabricGradleTool: "1.25.1",
+            groupie         : "2.0.3",
             gradleVersions  : "0.17.0",
             supportLibrary  : "27.0.2",
             archLifecycle   : "1.1.0",
@@ -36,6 +37,11 @@ ext {
                     preference   : "com.android.support:preference-v7:$versions.supportLibrary",
                     preferenceV14: "com.android.support:preference-v14:$versions.supportLibrary",
                     ],
+            // ================= UI ======================================
+            groupie                : [
+                    core   : "com.xwray:groupie:$versions.groupie",
+                    binding: "com.xwray:groupie-databinding:$versions.groupie",
+            ],
             // ================= Structure =================================
             lifecycle               : [
                     runtime        : "android.arch.lifecycle:runtime:$versions.archLifecycle",

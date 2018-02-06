@@ -51,7 +51,9 @@ dependencies {
     implementation depends.support.emoji
     implementation depends.support.preference
     implementation depends.support.preferenceV14
-
+//      UI
+    implementation depends.groupie.core
+    implementation depends.groupie.binding
 //    Structure
     implementation depends.lifecycle.runtime
     implementation depends.lifecycle.extensions
