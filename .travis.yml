@@ -6,6 +6,13 @@ branches:
   - master
   - develop
   - /^(feature).*$/
+before_script:
+  - '[ "$TRAVIS_BRANCH" == "develop" ] && [ "$TRAVIS_PULL_REQUEST" != "false" ] && MTB_PR=1 || echo "This is master or not PR"'
+  - '[ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && MTB_MERGE_MASTER=1 || echo "This is not master or PR"'
+  - echo TRAVIS_BRANCH=${TRAVIS_BRANCH}
+  - echo TRAVIS_PULL_REQUEST=${TRAVIS_PULL_REQUEST}
+  - echo MTB_PR=${MTB_PR}
+  - echo MTB_MERGE_MASTER=${MTB_MERGE_MASTER}
 install: 
 - echo y | android update sdk -u -a -t tools
 - echo y | android update sdk -u -a -t platform-tools
