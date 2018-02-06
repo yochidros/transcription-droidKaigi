@@ -69,8 +69,20 @@ dependencies {
     implementation depends.kotpref.initializer
 
 //    Test
-    androidTestImplementation  depends.supporttest.runner
-    androidTestImplementation  depends.supporttest.espresso
+    testImplementation depends.junit
+    testImplementation depends.mockitoKotlin
+
+    testImplementation depends.robolectric.core
+    testImplementation depends.robolectric.multidex
+    testImplementation depends.assertk
+
+    testImplementation depends.threetenbp
+
+    androidTestImplementation depends.supporttest.runner
+    androidTestImplementation depends.supporttest.espresso
+    androidTestImplementation depends.supporttest.contrib
+    androidTestImplementation depends.assertk
+
 }
 
 kapt {

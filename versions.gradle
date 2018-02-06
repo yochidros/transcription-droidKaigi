@@ -15,11 +15,12 @@ ext {
             archLifecycle   : "1.1.0",
             dagger          : "2.13",
             kotpref         : "2.3.0",
+            robolectric     : "3.5.1",
     ]
 
     depends = [
             kotlin              : [
-                    stdlib: "org.jetbrains.kotlin:kotlin-stdlib-jre7:$versions.kotlin",
+                    stdlib: "org.jetbrains.kotlin:kotlin-stdlib-jre8:$versions.kotlin",
             ],
 
             // =================== Support Library ===================================
