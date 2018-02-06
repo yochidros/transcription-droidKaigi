@@ -17,8 +17,6 @@ before_script:
   - echo TRAVIS_PULL_REQUEST=${TRAVIS_PULL_REQUEST}
   - echo MTB_PR=${MTB_PR}
   - echo MTB_MERGE_MASTER=${MTB_MERGE_MASTER}
-before_install:
-  - echo y | sdkmanager "platform;android-27"
 install:
   - echo y | android update sdk -u -a -t tools
   - echo y | android update sdk -u -a -t platform-tools
