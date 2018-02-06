@@ -1,6 +1,10 @@
 language: android
 jdk: oraclejdk8
 sudo: false
+env:
+  global:
+  - GRADLE_OPTS="-Xmx512m -XX:MaxPermSize=512m"
+  - ADB_INSTALL_TIMEOUT=10
 branches:
   only:
   - master
@@ -13,19 +17,14 @@ before_script:
   - echo TRAVIS_PULL_REQUEST=${TRAVIS_PULL_REQUEST}
   - echo MTB_PR=${MTB_PR}
   - echo MTB_MERGE_MASTER=${MTB_MERGE_MASTER}
-before_install:
-  - mkdir "$ANDROID_HOME/licenses" || true
-  - echo -e "\n8933bad161af4178b1185d1a37fbf41ea5269c55" > "$ANDROID_HOME/licenses/android-sdk-license"
-  - echo -e "\n84831b9409646a918e30573bab4c9c91346d8abd" > "$ANDROID_HOME/licenses/android-sdk-preview-license"
-    #install:
-    #- echo y | android update sdk -u -a -t tools
-    #- echo y | android update sdk -u -a -t platform-tools
-    #- echo y | android update sdk -u -a -t build-tools-27.0.2
-    #- echo y | android update sdk -u -a -t android-27
-    #- echo y | android update sdk -u -a -t extra-android-support
-    #- echo y | android update sdk -u -a -t extra-google-m2repository
-    #- echo y | android update sdk -u -a -t extra-android-m2repository
-
+install:
+  - echo y | android update sdk -u -a -t tools
+  - echo y | android update sdk -u -a -t platform-tools
+  - echo y | android update sdk -u -a -t build-tools-27.0.2
+  - echo y | android update sdk -u -a -t android-27
+  - echo y | android update sdk -u -a -t extra-android-support
+  - echo y | android update sdk -u -a -t extra-google-m2repository
+  - echo y | android update sdk -u -a -t extra-android-m2repository
 android:
   components:
   - tools
@@ -39,7 +38,7 @@ android:
   - android-sdk-preview-license-.+
   - android-sdk-license-.+
   - google-gdk-license-.+
-
+  - '.+'
 notifications:
   slack:
     secure: "JgzMYO6RTxsqKDBIlMIAghtyZoWy2pGaQ8bt9tBkVt7x6jVX4uHPy4LQlAOmJbU4AiB5S209QGFJX0NEyOWA2Nje8t67We9dQYjLigyu99brrbJj45EQbeddHNN17V6wELk8INwhwWXnHwamOMCC9jwUy9w2a7pOma6RrBfkBdDGCNhyX8J7uUZ2tbuPCfXbxiv5paX4Y905rxvzDlJekgZfY0cokDC7P/GZ3Y5gt/1BVVLgAmTNHPWtK0Qi0cs34M+N0odXSlJBa9QbKcU0uUVRvVfav51Xe3K+U47aEhRsQ+ZuqWyYuX0DP503ypzV1t2UbXkc7L6IoeB39W7lMIfe/u7zVnoSs9wB0utQ20cLPZT+pAkwMOyiZJqrYaJ/ZorVRcBVqsEgQsDFILyAdUFhN6Eh8kpIYzODvbETSjCgTS5rxgjiJPHegTDf/6mWUwDzxy/uaqlR9uqajcRNHJBHF6XaLjkdjiC8W+x3/fClJfzfLHhRYyKmEC/IFI0TY/rW5UIFquC3KYPoCOav2DtrEyqgP/5VB6KEhtjC0uE/goABcub5ZejMWSUWEKcBrp9V5JbjDCg5+8KO19EURgalNADSVcSsMdtW4KHb3pZuJxmQAHOlNPvaXHcS4vbO/JeIZBez9VdgXy6+LMebSbMbHPQMf7x0KES6dr/VdqY="
