@@ -4,6 +4,8 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v7.app.AppCompatActivity
 import com.example.yochio.copy_conference_app_2018.R
+import com.example.yochio.copy_conference_app_2018.presentation.about.AboutAppActivity
+import com.example.yochio.copy_conference_app_2018.presentation.about.AboutAppFragment
 import com.example.yochio.copy_conference_app_2018.presentation.common.fragment.Findable
 import com.example.yochio.copy_conference_app_2018.presentation.feed.FeedFragment
 import javax.inject.Inject
@@ -24,6 +26,14 @@ class NavigationController @Inject constructor(private val activity: AppCompatAc
 
     fun navigateToFeed() {
         replaceFragment(FeedFragment.newInstance())
+    }
+
+    fun navigateToAboutAppActivity() {
+        AboutAppActivity.start(activity)
+    }
+
+    fun navigateToAboutApp() {
+        replaceFragment(AboutAppFragment.newInstance())
     }
 
     private fun replaceFragment(fragment: Fragment) {

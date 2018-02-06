@@ -2,6 +2,7 @@ package com.example.yochio.copy_conference_app_2018.di
 
 import android.app.Application
 import android.arch.lifecycle.ViewModel
+import com.example.yochio.copy_conference_app_2018.di.activitymodule.AboutAppActivityBuilder
 import com.example.yochio.copy_conference_app_2018.di.activitymodule.MainActivityBuilder
 import com.example.yochio.copy_conference_app_2018.presentation.App
 import dagger.BindsInstance
@@ -18,7 +19,8 @@ import javax.inject.Singleton
     AndroidInjectionModule::class,
     AppModule::class,
     ViewModelModule::class,
-    MainActivityBuilder::class
+    MainActivityBuilder::class,
+    AboutAppActivityBuilder::class
 ])
 
 interface AppComponent {

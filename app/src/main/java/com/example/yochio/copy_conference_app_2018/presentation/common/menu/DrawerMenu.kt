@@ -11,6 +11,7 @@ import android.view.View
 import com.example.yochio.copy_conference_app_2018.R
 import com.example.yochio.copy_conference_app_2018.presentation.MainActivity
 import com.example.yochio.copy_conference_app_2018.presentation.NavigationController
+import com.example.yochio.copy_conference_app_2018.presentation.about.AboutAppActivity
 import javax.inject.Inject
 import kotlin.reflect.KClass
 
@@ -92,6 +93,9 @@ class DrawerMenu @Inject constructor(
     ) {
         HOME(R.id.nav_item_home, MainActivity::class, {
             navigateToMainActivity()
+        }),
+        ABOUT(R.id.nav_item_info, AboutAppActivity::class, {
+            navigateToAboutAppActivity()
         }),
         OTHER(0, Unit::class, {
 
