@@ -25,8 +25,6 @@ install:
   - echo y | android update sdk -u -a -t extra-android-support
   - echo y | android update sdk -u -a -t extra-google-m2repository
   - echo y | android update sdk -u -a -t extra-android-m2repository
-script:
-  - ${ANDROID_SDK_HOME}/bin/sdkmanager --list 
 android:
   components:
   - tools
