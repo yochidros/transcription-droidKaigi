@@ -41,6 +41,7 @@ android:
   - '.+'
 script:
   - echo ${ANDROID_HOME}
+  - ./gradlew build test
 notifications:
   email: false
   slack:
