@@ -25,7 +25,7 @@ android {
     buildTypes {
         dubug {
             manifestPlaceholders = [shceme: "conference", host: "com.example.yochio"]
-            resValue "string", "app_name", "DroidKaigi 2018"
+            resValue "string", "app_name_debug", "DroidKaigi 2018"
             versionNameSuffix "-debug"
         }
         release {
