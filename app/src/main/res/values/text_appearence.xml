@@ -12,4 +12,9 @@
     <style name="TextStyle.App.Title" parent="Platform.TextStyle.App.Title">
         <item name="android:textAppearance">@style/TextAppearance.App.Title</item>
     </style>
+
+    <style name="TextAppearance.App.Body2" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/notosans_medium</item>
+    </style>
 </resources>
