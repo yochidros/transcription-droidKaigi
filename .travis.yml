@@ -1,6 +1,11 @@
 language: android
 jdk: oraclejdk8
 sudo: false
+branches:
+  only:
+  - master
+  - develop
+  - feature/*
 install: 
 - echo y | android update sdk -u -a -t tools
 - echo y | android update sdk -u -a -t platform-tools
